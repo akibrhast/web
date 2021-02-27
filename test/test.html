@@ -3,7 +3,7 @@ layout: null
 title: Events - Hack for LA
 permalink: /test/
 ---
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
     <!-- 
         Things to do still
@@ -68,7 +68,7 @@ permalink: /test/
         <div class="row">
             <div class="col-8 border border-dark rounded" id='markdown-container'>
                 {% capture index %}
-                    {% include_relative test0.md %}
+                    {% include_relative test3.md %}
                 {% endcapture %} 
 
                 {{index | markdownify}}
@@ -116,7 +116,7 @@ permalink: /test/
 
     document.addEventListener('DOMContentLoaded',createStickyNav);
     function createStickyNav(){
-        const navHeaders = document.querySelectorAll('#markdown-container>h2');
+        const navHeaders = document.querySelectorAll('#markdown-container>h3');
 
         navHeaders.forEach(header=>{
             let navElement = `<a class="nav-link" href="#${header.id}">${header.textContent}</a>`;
