@@ -1,4 +1,4 @@
-name: Validate Projects Collections
+name: Validate Projects Collections 
 
 # Run this action every day at 4am Pacific (12 am UTC)
 # on:
